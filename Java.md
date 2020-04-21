@@ -69,7 +69,34 @@ h; Multitâche
 
 ### 2. Cycle dev
 
-- Jdk
+##### Jdk =
+- Api standard pour compiler,
+- Chaque classe doit être contenu dans un fichjier `.java`, Une seule de ces classe peut êtredéclarée publuque.
+
+# 1. Bases du langage
+
+#### A. variables
+
+- Commence par une letter
+- lettre /chiffre /char souligné
+- max 1023 chars
+- distinctions entre min et msjsdiag
+- mots clé
+
+#### B. Type de var
+Deux cat de type :
+- Type value (contient les infos)
+- Type ref (addresse mémoire où se trouvent les infos)
+
+> &rarr; programme dans le mémoire
+
+8 type primitifs (signé) :
+```
+char, Byte 
+```
+Chacun de ces type possède une classe appelée wrapper
+
+`new Integer(25)`
 
 ### 3. les énumérations
 
