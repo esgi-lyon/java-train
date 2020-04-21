@@ -33,6 +33,7 @@ public class Bonjour {
         String prix = "500";
         double dprix = Double.parseDouble(prix);
         System.out.println(dprix);
+        // BREAKING CODE (Out of byte range number)
         // System.out.println("== terrible ==");
         // Throw error prix > 500 > limit range of type byte
         // byte bprix = Byte.parseByte(prix);

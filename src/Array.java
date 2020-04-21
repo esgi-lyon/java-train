@@ -34,17 +34,29 @@ public class Array {
         System.out.println(S+"Binary search"+D);
         Integer[] tableau1 = {1224,888, 986, 678, 123, 789, 325, 568, 987};
         Arrays.sort(tableau1); // tri du tableau
-        System.out.println(Arrays.binarySearch(tableau1,123)); // tri du tableau
-        System.out.println(Arrays.toString(tableau1)); // tri du tableau
-
-        System.out.println(S+"Loop Array"+D);
-
-        for (int i=0;i< tableau1.length;i++) {
-            System.out.println(tableau1[i]+"\t");
-        }
-
-        Arrays.sort(tableau1, Collections.reverseOrder());
+        System.out.println(Arrays.binarySearch(tableau1,123)); // binary search
         System.out.println(Arrays.toString(tableau1));
 
+        //System.out.println(S+"Loop Array"+D);
+
+        // for (int i=0;i< tableau1.length;i++) {
+        //     System.out.println(tableau1[i]+"\t");
+        // }
+
+        System.out.println(S+"ASC array"+D);
+        System.out.println(Arrays.toString(tableau1));
+        Integer[] copieTableau1  = Arrays.copyOf(tableau1, tableau1.length);
+        System.out.println(S+"DESC array"+D);
+        Arrays.sort(copieTableau1, Collections.reverseOrder());
+        System.out.println(Arrays.toString(copieTableau1));
+        // copie un tableau
+        Integer[] copieTableau3;
+        System.out.println(S+"Show range"+D);
+        copieTableau3  = Arrays.copyOfRange(tableau1, 0, 3);
+        System.out.println(Arrays.toString(copieTableau3));
+        // méthode fill array
+        int[] videTab = {0, 1};
+        Arrays.fill(videTab, 2);
+        System.out.println(Arrays.toString(videTab));
     }
 }
