@@ -104,10 +104,45 @@ public class Bonjour
 		if(chaine1.equals(chaine2)){
 			System.out.println("Les chaines sont identiques");
 		} else {
-			System.out.println("Les chaines sont différents");
+			System.out.println("Les chaines sont différentes");
 		}
 		String chaine3 = "ma chaine 3";
 		String chaine4 = "ma ChainE 3";
+		if(chaine3.equalsIgnoreCase(chaine4)){
+			System.out.println("Les chaines sont identiques");
+		}else{
+			System.out.println("Les chaines sont différentes");
+		}
+		// Utilisation de compareTo
+		if(chaine3.compareTo(chaine4)>0){
+			System.out.println("La chaine 3 est > chaine 4");
+		} else if (chaine3.compareTo(chaine4)<0){
+			System.out.println("La chaine 3 est < chaine 4");
+		} else {
+			System.out.println("Les chaines sont identiques");
+		}
+		// Utilisation de la méthode StartsWith & endsWith
+		String fichier = "Bonjour.java";
+		if(fichier.endsWith(".java")){
+			System.out.println("C'est un outil fichier source java");
+		}
+		// Utilisation de trim
+		String chaineTrim = "chaine";
+		System.out.println("longueur de la chaine : " + chaineTrim.length());
+		System.out.println("Longueur de la chaine nettoyée : " + chaineTrim.trim().length());
+		// Utilisation de toLowerCase & toUpperCase
+		System.out.println(chaine1.toLowerCase());
+		System.out.println(chaine1.toUpperCase());
+		// Utilisation indexOf
+		String recherche;
+		int position;
+		recherche = "e";
+		position = chaine1.indexOf(recherche);
+		while(position>=0){
+			System.out.println("Chaine trouvée à la position " + position);
+			position = chaine1.indexOf(recherche, position+1);
+		}
+		System.out.println("Fin de la recherche");
 	}
 }
 
