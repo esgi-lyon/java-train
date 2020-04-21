@@ -98,6 +98,14 @@ Chacun de ces type possède une classe appelée wrapper
 
 `new Integer(25)`
 
+#### C. val par default
+
+- Type num à 0
+- char : unicode \0000
+
+#### D. valeurs littérales
+>Les valeur num peuvent être use avec 
+
 ### 3. les énumérations
 
 public enum Jours
