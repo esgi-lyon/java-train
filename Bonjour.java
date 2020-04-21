@@ -143,6 +143,24 @@ public class Bonjour
 			position = chaine1.indexOf(recherche, position+1);
 		}
 		System.out.println("Fin de la recherche");
+		// Utilisation de replace
+		String chaine5 = "L'hiver sera pluvieux.";
+		chaine5 = chaine5.replace("hiver", "été");
+		System.out.println(chaine5);
+		// Opérateurs
+		int i = 3;
+		System.out.println(i++); // Notation postfixée
+		System.out.println(++i); // Notation préfixée
+		// Modulo
+		System.out.println(5%3);
+		System.out.println(5%(-3));
+		System.out.println((-5)%3);
+		System.out.println((-5)%(-3));
+		// Perte de présicion float et double
+		for(float j=0.1f; j<1.0f; j+=0.1f){
+			System.out.println("je suis un float -> " + j);
+			System.out.println("je suis un double -> " + (double)j);
+		}
 	}
 }
 
