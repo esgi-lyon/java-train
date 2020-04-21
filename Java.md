@@ -69,7 +69,12 @@ h; Multitâche
 
 ### 2. Cycle dev
 
-- Jdk
+##### Jdk =
+- Api standard pour compiler,
+- Chaque classe doit être contenu dans un fichjier `.java`, Une seule de ces classe peut êtredéclarée publuque.
+
+1. Code
+
 
 ### 3. les énumérations
 
