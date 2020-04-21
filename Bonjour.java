@@ -2,6 +2,8 @@ public class Bonjour
 {
 	static String message = "Bonjour tout le monde !";
 	public static String terrible = "terrible";
+	static Jours jours;
+
 	public static void main(String[] args)
 	{
 		System.out.println(message);
@@ -41,5 +43,30 @@ public class Bonjour
 		// Calcule le volume du cercle
 		double volume = disque*len;
 		System.out.println("Le volume de mon cercle fait " + volume);
+
+		// Utilisation de l'énumération
+		System.out.println(Jours.MARDI);
+	}
+}
+
+enum Jours {
+	// Déclaration de l'énumération
+	DIMANCHE ("c'est dimanche"),
+	LUNDI ("c'est lundi"),
+	MARDI ("c'est mardi"),
+	MERCREDI ("c'est mercredi"),
+	JEUDI ("c'est jeudi"),
+	VENDREDI ("c'est vendredi"),
+	SAMEDI ("c'est samedi");
+
+	// Déclaration de la variable jour
+	private String jour = "";
+	// Déclaration du constructeur
+	Jours(String jour){
+		this.jour = jour;
+	}
+	// Surcharge de la méthode toString
+	public String toString(){
+		return jour;
 	}
 }
