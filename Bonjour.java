@@ -159,7 +159,84 @@ public class Bonjour {
 			+ chaineTrim.length());
 		System.out.println("Longueur de la chaine netoyée "
 			+ chaineTrim.trim().length());
+		// utilisation de toUpperCase et toLowerCase
+		System.out.println(chaine1.toLowerCase());
+		System.out.println(chaine1.toUpperCase());
+		//utilisation de indexOf
+		String recherche;
+		int position;
+		recherche = "e";
+		position = chaine1.indexOf(recherche);
+		while(position>=0){
+			System.out.println("chaine trouvée à la position "
+				+position);
+			position = chaine1.indexOf(recherche, position+1);
+		}
+		System.out.println("fin de la recherche");
+		// utilisation de replace
+		String chaine5 = "l'hiver sera pluvieux.";
+		chaine5 = chaine5.replace("hiver","été");
+		chaine5 = chaine5.replace("pluvieux","chaud");
+		System.out.println(chaine5);
+		// opérateurs
+		int i = 3;
+		System.out.println(i++);//notation postfixée
+		System.out.println(++i);//notation préfixée
+
+		// modulo
+		System.out.println(5%2);
+		System.out.println(5%(-3));
+		System.out.println((-5)%3);
+		System.out.println((-5)%(-3));
+		// perte de précision float et chez double
+		for(float j=0.1f; j<1.0f; j+=0.1f){
+			System.out.println("je suis un float "+ j);
+			System.out.println("je suis un double " +(double)j);
+		}
+		// instruction ternaire
+		int num = 8;
+		// ===============================
+		String msg1 = "";
+		if(num < 10){
+			msg1 = "num inférieur à 10";
+		}
+		else
+		{
+			msg1 = "num supérieur à 10";
+		}
+		// ===============================
+		String msg2 = num < 10 
+			? "num inférieur à 10" 
+			: "num supérieur à 10";
+		System.out.println(msg2);
+		// ===============================
+		// switch case
+		switch(num) {
+			case 8 :
+				System.out.println("le num est 8");
+				break;
+			case 10 :
+				 System.out.println("le num est 10");
+				 break;
+			case 12 :
+				System.out.println("le num est 12");
+				break;
+			default :
+				System.out.println("default");	
+		}// fin
+		//boucle for pour tableau
+		for(Integer retour : tableau1){
+			System.out.println(retour);
+		}
+		String[] tablo = {"rouge","bleu","vert","blanc"};
+		for(int k=0; k<tablo.length; k++){
+			System.out.println(tablo[k]);
+		}
+		for(String couleur : tablo){
+			System.out.println(couleur);
+		}
 	}	
+
 }
 
 enum Jours {
