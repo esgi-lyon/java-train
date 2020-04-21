@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Bonjour
 {
 	static String message = "Bonjour tout le monde !";
@@ -46,6 +48,19 @@ public class Bonjour
 
 		// Utilisation de l'énumération
 		System.out.println(Jours.MARDI);
+
+		// Utilisation des tableaux
+		int[] chiffreAffaire;
+		chiffreAffaire = new int[5];
+		chiffreAffaire[0] = 25;
+		// Initialisation d'un tableau sur une ligne
+		int[] copieChiffreAffaire = {25,26,27,28,29};
+		// Tableau à plusieurs dimensions
+		int[][] matrice;
+		matrice = new int[2][3]; // Création
+		matrice[0][0] = 99; // Stockage d'une valeur pos 0,0
+		int[][] matrice2 = {{1,2,3},{4,5,6}};
+		System.out.println(Arrays.deepToString(matrice2));
 	}
 }
 
