@@ -2,5 +2,4 @@
 
 `javac src/Bonjour.java`
 
-Env variables : 
-- `JAVA_HOME` ==> 
+`java Bonjour`

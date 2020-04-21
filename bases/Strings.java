@@ -1,3 +1,5 @@
+package bases;
+
 public class Strings {
     static final String D = " ==]";
     static final String S = "[== ";

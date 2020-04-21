@@ -1,3 +1,5 @@
+package bases;
+
 public class Bonjour {
     static final String D = " ==]";
     static final String S = "[== ";
