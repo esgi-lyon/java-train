@@ -161,6 +161,46 @@ public class Bonjour
 			System.out.println("je suis un float -> " + j);
 			System.out.println("je suis un double -> " + (double)j);
 		}
+		// Instruction ternaire
+		int num = 8;
+		//=============================================
+		if(num < 10){
+			System.out.println("Num inférieur à 10");
+		} else {
+			System.out.println("Num supérieur à 10");
+		}
+		//=============================================
+		String msg = num < 10
+			? "num inférieur à 10"
+			: "num supérieur à 10";
+		System.out.println(msg);
+		//=============================================
+		// Swicth case
+		switch(num) {
+			case 8 :
+				System.out.println("Le num est 8");
+				break;
+			case 10 :
+				System.out.println("Le num est 10");
+				break;
+			case 12 :
+				System.out.println("Le num est 12");
+				break;
+			default :
+				System.out.println("default");
+				break;
+		}
+		// Boucle for pour tableau
+		for(Integer retour : tableau1){
+			System.out.println(retour);
+		}
+		String[] tablo = {"rouge", "bleu", "vert", "blanc"};
+		for (int k=0; k < tablo.length; k++){
+			System.out.println(tablo[k]);
+		}
+		for (String couleur : tablo){
+			System.out.println(couleur);
+		}
 	}
 }
 
