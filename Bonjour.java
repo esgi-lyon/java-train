@@ -125,15 +125,41 @@ public class Bonjour {
 			System.out.println("Les chaines sont différentes");
 		}
 		// ================================
+		// utilisation de equalsIgnoreCase
 		String chaine3 = "ma chaine3";
 		String chaine4 = "ma chaiNe3";
-		if(chaine3.equals(chaine4)){
+		if(chaine3.equalsIgnoreCase(chaine4)){
 			System.out.println("les chaines sont identiques");
 		}
 		else{
 			System.out.println("les chaines	sont différentes");
 		}
-	}
+		// utilisation de compareTo
+		if(chaine3.compareTo(chaine4)>0){
+			System.out.println("la chaine3 > chaine4");
+		}
+		else if	(chaine3.compareTo(chaine4)<0)
+		{
+			System.out.println("la chaine3 est < chaine4");
+		}
+		else
+		{
+			System.out.println("les chaines sont identiques");
+		}
+		System.out.println(chaine3.compareTo(chaine4));
+		System.out.println(chaine4.compareTo(chaine3));
+		// utilisation de la méthode StartsWith & endsWith
+		String fichier = "Bonjour.java";
+		if(fichier.endsWith(".java")){
+			System.out.println("C'est un fichier source java");
+		}
+		// utilisation de trim
+		String chaineTrim = "  chaine  ";
+		System.out.println("Longueur de la chaine : "
+			+ chaineTrim.length());
+		System.out.println("Longueur de la chaine netoyée "
+			+ chaineTrim.trim().length());
+	}	
 }
 
 enum Jours {
