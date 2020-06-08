@@ -1,6 +1,6 @@
 import java.util.GregorianCalendar;
 
-public class Main {
+public class MainNo {
     public static void main(String args[]) {
         Personne p = new Personne();
         p.setNom("Lacosté");
@@ -22,5 +22,6 @@ public class Main {
         Client iencli = new Client("toto", "jojo", new GregorianCalendar(3042,10,8), 'Z');
         iencli.affichage(true, 1);
         iencli.setPoids(8000.00);
+        iencli.seDeplacer();
     };
 }

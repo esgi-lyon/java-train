@@ -1,0 +1,10 @@
+{
+    "java.autobuild.enabled": true,
+    "vsintellicode.java.completionsEnabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}

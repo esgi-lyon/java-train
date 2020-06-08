@@ -98,7 +98,7 @@ public class Personne extends EtreVivant {
         return this.numero;
     }
 
-    //Gérer opar le GC dans les nouvelles version
+    // Gérer opar le GC dans les nouvelles version
     // @Override
     // public void finalize() throws Throwable {
     //     System.out.println("destroyed");

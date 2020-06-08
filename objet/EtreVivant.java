@@ -10,4 +10,5 @@ public abstract class EtreVivant {
 		this.poids = poids;
 	}
 
+    protected abstract void seDeplacer();
 }
