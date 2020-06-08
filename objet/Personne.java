@@ -1,11 +1,12 @@
-package objet;
-
 import java.util.GregorianCalendar;
 
 public class Personne {
     private String nom;
     private String prenom;
     GregorianCalendar dateNaiss;
+    private int nbInstances;
+
+    {nbInstances++;}
 
     public Personne() {
         System.out.println("Création de ce genre");
@@ -23,13 +24,14 @@ public class Personne {
 
     public long calculAge() {
         long age;
-        dateNaiss = new GregorianCalendar(1999, 10, 8);
+        dateNaiss = this.getDateNaiss();
         age = new GregorianCalendar().getTimeInMillis() - dateNaiss.getTimeInMillis();
         age = age / 1000 / 60 / 60 / 24 / 365;
 
         return age;
     }
 
+    @Deprecated
     public void affichage() {
         System.out.println("nom" + getNom());
         System.out.println("prenom" + getPrenom());
@@ -70,8 +72,23 @@ public class Personne {
         this.dateNaiss = dateNaiss;
     }
 
+    @Override
     public String toString()
     {
         return (String) this.nom + this.prenom + this.dateNaiss;
     }
+
+    public int getNbInstances() {
+		return this.nbInstances;
+	}
+
+	public void setNbInstances(int nbInstances) {
+		this.nbInstances = nbInstances;
+	}
+
+    //Gérer opar le GC dans les nouvelles version
+    // @Override
+    // public void finalize() throws Throwable {
+    //     System.out.println("destroyed");
+    // }
 }

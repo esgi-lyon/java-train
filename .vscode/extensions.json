@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "faustinoaq.javac-linter",
-        "youmaycallmev.vscode-java-saber",
         "gabrielbb.vscode-lombok"
     ]
 }
