@@ -1,10 +1,11 @@
 import java.util.GregorianCalendar;
 
-public class Personne {
+public class Personne extends EtreVivant {
     private String nom;
     private String prenom;
     GregorianCalendar dateNaiss;
     private int nbInstances;
+    private int numero;
 
     {nbInstances++;}
 
@@ -20,6 +21,7 @@ public class Personne {
         this.nom = nom;
         this.prenom = prenom;
         this.dateNaiss = dateNaiss;
+        this.setNumero();
     }
 
     public long calculAge() {
@@ -84,7 +86,17 @@ public class Personne {
 
 	public void setNbInstances(int nbInstances) {
 		this.nbInstances = nbInstances;
-	}
+    }
+    
+    public void setNumero () {
+        while (this.numero < 1000) {
+            this.numero += (int) (Math.random() * 10000);
+        }
+    }
+
+    public int getNumero () {
+        return this.numero;
+    }
 
     //Gérer opar le GC dans les nouvelles version
     // @Override
