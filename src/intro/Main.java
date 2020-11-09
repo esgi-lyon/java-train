@@ -1,4 +1,4 @@
-package com.company;
+package intro;
 
 import java.util.ArrayList;
 import java.util.Scanner;
