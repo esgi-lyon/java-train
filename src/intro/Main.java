@@ -19,11 +19,11 @@ public class Main {
 			String prenomE = sc.next();
 			Etudiant e1 = new Etudiant(numE, nomE, prenomE);
 	    	listE.add(e1);
-	    	e1.affichage();
+	    	e1.show();
 		}
 
 		System.out.println("\nEtu 0");
-	    listE.get(0).affichage();
+	    listE.get(0).show();
 		System.out.println("\nEtu list");
 		Etudiant.affichageList(listE);
     }

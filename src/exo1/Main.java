@@ -4,25 +4,28 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Etudiant e1 = new Etudiant("Habibou", "de Debezede", 3, 2019);
-        Etudiant e2 = new Etudiant("Brad", "Pitre", 2, 2017);
+        Student e1 = new Student(1, 33, "Habibou", "de Debezede", 2019);
+        Student e2 = new Student(2, 44, "Brad", "Pitre", 2017);
 
-        ArrayList<Etudiant> eList = new ArrayList<Etudiant>();
+        ArrayList<Student> eList = new ArrayList<Student>();
         eList.add(e1);
         eList.add(e2);
 
-        System.out.println(
-                Etudiant.getHigherRegisterCost(eList).getRegisterCost()
-        );
+        Student sWithHigherRegisterCost = Student.getWithHigherRegisterCost(eList);
+        System.out.println("Student " + sWithHigherRegisterCost.name + " has higher register cost of : " + sWithHigherRegisterCost.getRegisterCost());
 
-        Teacher t1 = new Teacher("Ryan", "Grosseligne", 30, 30);
-        Teacher t2 = new Teacher("Britney", "Spritz", 22, 13);
-        Teacher t3 = new Teacher("Ba ba baw", "le J", 29, 10);
+        System.out.println("=================");
+
+        Teacher t1 = new Teacher(1, 30, "Ryan", "Grosseligne", 30);
+        Teacher t2 = new Teacher(2, 20, "Britney", "Spritz", 13);
+        Teacher t3 = new Teacher(2, 23, "le J", "c'est le S", 13);
 
         ArrayList<Teacher> tList = new ArrayList<Teacher>();
         tList.add(t1);
         tList.add(t2);
         tList.add(t3);
-        System.out.println(Teacher.getHigherSalary(tList).getSalary());
+        Teacher tWithHighSalary = Teacher.getWithHigherSalary(tList);
+
+        System.out.println("Teacher " + tWithHighSalary.name + " has higher salary of : " + tWithHighSalary.getSalary());
     }
 }

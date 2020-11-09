@@ -9,7 +9,7 @@ public class Etudiant {
     public Etudiant() {
 
     }
-
+    // Override construct
     public Etudiant(int num_Etu, String nom, String prenom) {
         super();
         this.num_Etu = num_Etu;
@@ -41,7 +41,7 @@ public class Etudiant {
         this.prenom = prenom;
     }
 
-    public void affichage() {
+    public void show() {
         System.out.println(
                 "\nPrenom : " + this.prenom + " Nom : " + this.nom + " Num etu : " + this.num_Etu
         );
@@ -50,7 +50,7 @@ public class Etudiant {
     public static void affichageList(ArrayList<Etudiant> listE) {
         int j = 0;
         while (j < listE.size()) {
-            listE.get(j).affichage();
+            listE.get(j).show();
             j++;
         }
     }
