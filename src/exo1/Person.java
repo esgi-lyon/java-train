@@ -1,6 +1,6 @@
 package exo1;
 
-public abstract class Person {
+public abstract class Person implements SecureFields {
     protected int id, socialNum;
     public String name, lastname;
 

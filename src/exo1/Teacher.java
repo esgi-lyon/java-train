@@ -37,6 +37,10 @@ public class Teacher extends Person{
                 : e2;
     }
 
+    public void setOldeness(int oldeness) {
+        this.oldeness = oldeness;
+    }
+
     public int getOldeness() {
         return oldeness;
     }
