@@ -1,4 +1,4 @@
-package exo2;
+package td1.exo2;
 
 public class OutOfStockException extends Exception {
     public OutOfStockException(Id entity) {

@@ -1,4 +1,4 @@
-package intro;
+package td1.intro;
 
 import java.util.ArrayList;
 

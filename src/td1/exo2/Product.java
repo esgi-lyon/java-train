@@ -1,4 +1,4 @@
-package exo2;
+package td1.exo2;
 
 public class Product implements Id{
     private long id;

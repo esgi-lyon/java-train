@@ -1,4 +1,4 @@
-package exo1;
+package td1.exo1;
 
 import java.util.ArrayList;
 
