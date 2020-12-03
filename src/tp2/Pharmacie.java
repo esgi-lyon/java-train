@@ -14,7 +14,6 @@ public class Pharmacie extends Controller {
 
     public Pharmacie() {
         super();
-        this.routes.put("listAll", this.listView());
         // Fixtures
         this.clients.add(new Client("Aya Nakamurail", 80));
         this.clients.add(new Client("Ryan grosseligne", 200));
@@ -25,6 +24,8 @@ public class Pharmacie extends Controller {
         this.medocs.add(new Medoc("Cafeïne", 24.99, 20));
         this.medocs.add(new Medoc("Morphine", 104.99, 20));
 
+        // Routes
+        this.routes.put("listAll", this.listView());
         this.render();
     }
 
