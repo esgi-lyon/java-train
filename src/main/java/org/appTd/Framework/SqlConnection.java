@@ -7,12 +7,12 @@ import java.sql.SQLException;
 public class SqlConnection {
     Connection conn = null;
 
-    public void SqlConnection() {
+    public SqlConnection() {
         try {
-            this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?" +
+            this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java?" +
                     "user=java&password=java");
 
-            // Do something with the Connection
+            System.out.println(conn);
 
         } catch (SQLException ex) {
             // handle any errors

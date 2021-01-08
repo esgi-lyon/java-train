@@ -1,13 +1,11 @@
 package org.appTd;
 
-/**
- * Hello world!
- *
- */
+import org.appTd.Framework.SqlConnection;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        new SqlConnection();
     }
 }
