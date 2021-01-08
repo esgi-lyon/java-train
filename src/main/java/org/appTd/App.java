@@ -1,11 +1,22 @@
 package org.appTd;
 
-import org.appTd.Framework.SqlConnection;
+import org.appTd.Framework.DBOperation;
 
-public class App 
+import java.util.ArrayList;
+
+public class App
 {
     public static void main( String[] args )
     {
-        new SqlConnection();
+        DBOperation op = new DBOperation();
+
+        // Etudiant 1
+        ArrayList<String> data = new ArrayList<>();
+        data.add("tata");
+        data.add("toto");
+
+        op.insert("INSERT INTO etudiant (nom, prenom) VALUES (?, ?)", data);
+
+        op.list("SELECT * FROM etudiant");
     }
 }
