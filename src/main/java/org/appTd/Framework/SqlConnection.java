@@ -12,8 +12,6 @@ public class SqlConnection {
             this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java?" +
                     "user=java&password=java");
 
-            System.out.println(conn);
-
         } catch (SQLException ex) {
             // handle any errors
             System.out.println("SQLException: " + ex.getMessage());
